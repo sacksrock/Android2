@@ -22,7 +22,7 @@ public class MainActivityEvents implements LoginFragmentListener, RegisterFragme
 
     public void onClick(View v) {
         if (v.getId() == R.id.btnRegistrar) {
-            this.loginFragment.getView().setVisibility(View.INVISIBLE);
+            this.loginFragment.getView().setVisibility(View.GONE);
             this.registerFragment.getView().setVisibility(View.VISIBLE);
         }
     }

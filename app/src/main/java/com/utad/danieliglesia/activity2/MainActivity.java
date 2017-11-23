@@ -2,6 +2,7 @@ package com.utad.danieliglesia.activity2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.utad.danieliglesia.milib.Fragments.LoginFragment;
 import com.utad.danieliglesia.milib.Fragments.LoginFragmentListener;
@@ -19,13 +20,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         events = new MainActivityEvents(this);
         loginFragment = (LoginFragment)getSupportFragmentManager().findFragmentById(R.id.loginFragment);
         loginFragment.setListener(events);
         registerFragment = (RegisterFragment) getSupportFragmentManager().findFragmentById(R.id.registerFragment);
         registerFragment.setListener(events);
-
-
     }
 }
