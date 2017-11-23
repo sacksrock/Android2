@@ -10,9 +10,9 @@ import com.utad.danieliglesia.milib.Fragments.RegisterFragmentListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    MainActivityEvents events;
-    RegisterFragment registerFragment;
-    LoginFragment loginFragment;
+    private MainActivityEvents events;
+    private RegisterFragment registerFragment;
+    private LoginFragment loginFragment;
 
 
     @Override
